@@ -1,6 +1,6 @@
 # RPG repo
 
-This is repo is just made to help me make an easier way to play RPGs (Pathfinder at this time) without having to have all the papers and other things to play.
+This is a repo made to help me make an easier way to play RPGs (Pathfinder at this time) without having to have all the papers and other things to play.
 
 <!--# Laravel PHP Framework-->
 
