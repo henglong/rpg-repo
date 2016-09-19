@@ -13,9 +13,9 @@ class CreateCharItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('char_items', function (Blueprint $table) {
+        Schema::create('character_items', function (Blueprint $table) {
             $table->increments('id');
-            $table->interger('char_id')->unassigned()->index();
+            $table->interger('character_id')->unassigned()->index();
             $table->interger('item_id')->unassigned()->index();
             $table->timestamps();
         });
