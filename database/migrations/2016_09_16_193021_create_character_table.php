@@ -15,10 +15,10 @@ class CreateCharacterTable extends Migration
     {
         Schema::create('character', function (Blueprint $table) {
             $table->increments('id');
-            $table->interger('user_id')->unassigned()->index();
-            $table->interger('race_id')->unassigned();
-            $table->interger('deity_id')->unassigned();
-            $table->interger('class_id')->unassigned();
+            $table->interger('user_id')->unsigned()->index();
+            $table->interger('race_id')->unsigned();
+            $table->interger('deity_id')->unsigned();
+            $table->interger('class_id')->unsigned();
             $table->string('name');
             $table->string('story');
             $table->string('portrait_url');

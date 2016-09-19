@@ -21,12 +21,12 @@ class CreateRaceTable extends Migration
             $table->string('relations');
             $table->string('alignment');
             $table->string('Adventurers');
-            $table->interger('strength')->unassigned();
-            $table->interger('dexterity')->unassigned();
-            $table->interger('constitution')->unassigned();
-            $table->interger('intelligence')->unassigned();
-            $table->interger('wisdom')->unassigned();
-            $table->interger('charisma')->unassigned();
+            $table->interger('strength')->unsigned();
+            $table->interger('dexterity')->unsigned();
+            $table->interger('constitution')->unsigned();
+            $table->interger('intelligence')->unsigned();
+            $table->interger('wisdom')->unsigned();
+            $table->interger('charisma')->unsigned();
             $table->string('traits');
             $table->timestamps();
         });
