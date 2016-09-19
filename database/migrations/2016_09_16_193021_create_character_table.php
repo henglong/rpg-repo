@@ -18,10 +18,10 @@ class CreateCharacterTable extends Migration
             $table->interger('user_id')->unassigned()->index();
             $table->interger('race_id')->unassigned();
             $table->interger('deity_id')->unassigned();
+            $table->interger('class_id')->unassigned();
             $table->string('name');
             $table->string('story');
             $table->string('portrait_url');
-            $table->string('class');
             $table->interger('level');
             $table->string('alignment');
             $table->string('homeland');
