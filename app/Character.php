@@ -10,4 +10,12 @@ class Character extends Model
     {
         return $this->belongsToMany(Item::class, 'character_items');
     }
+    public function deity()
+    {
+        return $this->hasOne(Deity::class);
+    }
+    public function race()
+    {
+        return $this->hasOne(Race::class);
+    }
 }
