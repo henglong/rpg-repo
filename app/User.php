@@ -12,6 +12,11 @@ class User extends Authenticatable
         return $this->hasMany('App\Character');
     }
     
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+    
     use Notifiable;
 
     /**
