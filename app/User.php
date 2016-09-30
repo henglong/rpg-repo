@@ -9,12 +9,17 @@ class User extends Authenticatable
 {
     public function characters() 
     {
-        return $this->hasMany('App\Character');
+        return $this->hasMany(Character::class);
     }
     
     public function roles()
     {
         return $this->belongsToMany(Role::class);
+    }
+    
+    public function games()
+    {
+        return $this->hasMany(Game::class);
     }
     
     use Notifiable;
